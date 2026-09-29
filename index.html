@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Interactive To-Do List with LocalStorage created for InternCircle Web Development Internship.">
+
+    <title>My To-Do List | InternCircle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <!-- Header -->
+        <section class="todo-header">
+            <p class="subtitle">InternCircle Web Development</p>
+
+            <h1>My To-Do List</h1>
+
+            <p class="description">
+                Organize your tasks, track your progress and stay productive.
+            </p>
+        </section>
+
+
+        <!-- Task Input -->
+        <section class="task-input-section">
+
+            <div class="input-wrapper">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task..."
+                    autocomplete="off"
+                >
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+
+            </div>
+
+            <p id="inputMessage" class="input-message"></p>
+
+        </section>
+
+
+        <!-- Task Statistics -->
+        <section class="task-stats">
+
+            <div class="stat-card">
+                <strong id="totalTasks">0</strong>
+                <span>Total</span>
+            </div>
+
+            <div class="stat-card">
+                <strong id="activeTasks">0</strong>
+                <span>Active</span>
+            </div>
+
+            <div class="stat-card">
+                <strong id="completedTasks">0</strong>
+                <span>Completed</span>
+            </div>
+
+        </section>
+
+
+        <!-- Task List -->
+        <section class="tasks-section">
+
+            <div class="tasks-heading">
+                <h2>Your Tasks</h2>
+
+                <button id="clearCompletedBtn">
+                    Clear Completed
+                </button>
+            </div>
+
+            <ul id="taskList">
+                <!-- Tasks will be added here using JavaScript -->
+            </ul>
+
+            <p id="emptyMessage" class="empty-message">
+                No tasks yet. Add your first task above!
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            Built with HTML, CSS, JavaScript & LocalStorage
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
